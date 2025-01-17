@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,7 +18,8 @@
                 </a>
             </div>
             <div class="navbar">
-                <ul>
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Service</a></li>
@@ -28,7 +31,26 @@
     </header>
 
     <div class="hero">
-        <img src="./Images/taigun-sport-gallery-images-1.webp" alt="">
+        <!-- <img src="./Images/taigun-sport-gallery-images-1.webp" alt="">
+        <div class="hero-info">
+            <h1> 
+                <span>WELCOME TO</span> 
+                VOLSVAGAN
+                <span> DUBAI</span>
+            </h1>
+            <a href="" class="cta-btn">Explore more</a>
+        </div> -->
+
+
+
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+
+                <img src="./Images/taigun-sport-gallery-images-1.webp" alt="">
         <div class="hero-info">
             <h1> 
                 <span>WELCOME TO</span> 
@@ -37,6 +59,51 @@
             </h1>
             <a href="" class="cta-btn">Explore more</a>
         </div>
+
+      </div>
+      <div class="swiper-slide">
+
+                <img src="./Images/taigun-sport-gallery-images-2.webp" alt="">
+        <div class="hero-info">
+            <h1> 
+                <span>WELCOME TO</span> 
+                VOLSVAGAN
+                <span> DUBAI</span>
+            </h1>
+            <a href="" class="cta-btn">Explore more</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+
+                <img src="./Images/taigun-sport-gallery-images-3-1.webp" alt="">
+        <div class="hero-info">
+            <h1> 
+                <span>WELCOME TO</span> 
+                VOLSVAGAN
+                <span> DUBAI</span>
+            </h1>
+            <a href="" class="cta-btn">Explore more</a>
+        </div>
+
+      </div>
+      ...
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+
+
+
+  </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 </html>
